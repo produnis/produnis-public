@@ -355,7 +355,7 @@ INSERT INTO `procedure_type` (`procedure_type_id`, `parent`, `name`, `lab_id`, `
 (14, 1, 'ASL', 1, 'ASL', 'res', '', '', '', '', 'Anti Streptolysin-Titer', '', '', '', '< 200', 0, 1, ''),
 (15, 1, 'Rheumafaktor', 1, 'Rheuma', 'res', '', '', '', '', 'IgG IgA IgM', '', '', '', '< 14', 0, 1, ''),
 (16, 1, 'cyc. citrulliniert. Peptid-AK', 1, 'ccP-AK', 'res', '', '', '', '', 'cyc. citrulliniert. Peptid-AK', '', '', '', '< 7', 0, 1, ''),
-(17, 0, 'Gloodglucose', 1, 'BZtest', 'ord', 'arm', 'blood', 'inj', '', 'Blutzucker (Glycose)', '', '', 'oth', '55 - 115', 0, 1, ''),
+(17, 0, 'Bloodglucose', 1, 'BZtest', 'ord', 'arm', 'blood', 'inj', '', 'Blutzucker (Glycose)', '', '', 'oth', '55 - 115', 0, 1, ''),
 (18, 1, 'Blutzucker-Serum', 1, 'BZ', 'res', '', '', '', '', 'Blutzucker-Serum', '', '', '', '55 - 115', 0, 1, ''),
 (19, 17, 'Glucose', 1, 'Glucose', 'res', '', '', '', '', 'Glucose', '', '', '', '55 - 115', 0, 1, ''),
 (20, 1, 'Leukozyten', 1, 'Leukoz', 'res', '', '', '', '', 'Leukozyten', '', '', '', '4.30 - 10.0', 0, 1, ''),
