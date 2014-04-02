@@ -25,71 +25,76 @@ SET time_zone = "+00:00";
 --
 
 INSERT INTO `forms` (`id`, `date`, `encounter`, `form_name`, `form_id`, `pid`, `user`, `groupname`, `authorized`, `deleted`, `formdir`) VALUES
-(96, '2014-03-19 09:09:14', 16, 'Track: 24h Urin', 20, 2, 'produnis', 'Default', 1, 0, 'track_anything'),
-(97, '2014-03-19 09:13:05', 36, 'Track: 24h Urin', 21, 2, 'produnis', 'Default', 1, 0, 'track_anything'),
-(98, '2014-03-19 10:53:24', 40, 'Track: Gloodglucose', 22, 2, 'produnis', 'Default', 1, 0, 'track_anything'),
-(99, '2014-03-19 10:55:32', 41, 'Track: Gloodglucose', 23, 2, 'produnis', 'Default', 1, 0, 'track_anything'),
-(101, '2014-03-19 14:37:35', 36, 'Track: Gloodglucose', 25, 2, 'produnis', 'Default', 1, 0, 'track_anything'),
-(100, '2014-03-19 10:56:56', 69, 'Track: Gloodglucose', 24, 2, 'produnis', 'Default', 1, 0, 'track_anything');
+(1, '2014-04-02 15:20:33', 71, 'Track: Meal', 36, 2, 'produnis', 'Default', 1, 0, 'track_anything'),
+(2, '2014-04-02 15:22:17', 72, 'Track: Bloodglucose', 37, 2, 'produnis', 'Default', 1, 0, 'track_anything'),
+(3, '2014-04-02 15:18:36', 71, 'Track: Bloodglucose', 34, 2, 'produnis', 'Default', 1, 0, 'track_anything'),
+(4, '2014-04-02 15:19:41', 71, 'Track: Bloodglucose', 35, 2, 'produnis', 'Default', 1, 0, 'track_anything');
 
 --
 -- Daten für Tabelle `form_track_anything`
 --
 
-INSERT INTO `form_track_anything` (`id`, `date`, `pid`, `procedure_type_id`, `comment`) VALUES
-(25, '2014-03-19 13:37:35', NULL, 17, NULL),
-(24, '2014-03-19 09:56:56', NULL, 17, NULL),
-(23, '2014-03-19 09:55:32', NULL, 17, NULL),
-(22, '2014-03-19 09:53:24', NULL, 17, NULL),
-(21, '2014-03-19 08:13:05', NULL, 62, NULL),
-(20, '2014-03-19 08:09:14', NULL, 62, NULL);
+INSERT INTO `form_track_anything` (`id`, `date`, `user`, `procedure_type_id`, `comment`) VALUES
+(1, '2014-04-02 13:22:17', NULL, 1, NULL),
+(2, '2014-04-02 13:20:33', NULL, 2, NULL),
+(3, '2014-04-02 13:19:41', NULL, 1, NULL),
+(4, '2014-04-02 13:18:36', NULL, 1, NULL);
 
 --
 -- Daten für Tabelle `form_track_anything_results`
 --
 
 INSERT INTO `form_track_anything_results` (`id`, `track_anything_id`, `track_timestamp`, `itemid`, `result`, `comment`, `notes`) VALUES
-(1562, 21, '2014-03-16 09:13:21', 65, '49', NULL, NULL),
-(1561, 21, '2014-03-16 09:13:21', 64, '41', NULL, NULL),
-(1560, 21, '2014-03-16 09:13:21', 63, '410', NULL, NULL),
-(1559, 21, '2014-03-15 09:13:05', 65, '50', NULL, NULL),
-(1558, 21, '2014-03-15 09:13:05', 64, '40', NULL, NULL),
-(1557, 21, '2014-03-15 09:13:05', 63, '400', NULL, NULL),
-(1556, 20, '2014-03-14 09:10:26', 65, '25', NULL, NULL),
-(1555, 20, '2014-03-14 09:10:26', 64, '32', NULL, NULL),
-(1554, 20, '2014-03-14 09:10:26', 63, '250', NULL, NULL),
-(1553, 20, '2014-03-13 09:10:00', 65, '20', NULL, NULL),
-(1552, 20, '2014-03-13 09:10:00', 64, '30', NULL, NULL),
-(1551, 20, '2014-03-13 09:10:00', 63, '270', NULL, NULL),
-(1550, 20, '2014-03-12 09:09:33', 65, '27', NULL, NULL),
-(1549, 20, '2014-03-12 09:09:33', 64, '39', NULL, NULL),
-(1548, 20, '2014-03-12 09:09:33', 63, '220', NULL, NULL),
-(1547, 20, '2014-03-11 09:09:14', 65, '28', NULL, NULL),
-(1546, 20, '2014-03-11 09:09:14', 64, '24', NULL, NULL),
-(1545, 20, '2014-03-11 09:09:14', 63, '300', NULL, NULL),
-(1585, 25, '2014-03-19 18:37:56', 19, '120', NULL, NULL),
-(1584, 25, '2014-03-19 14:37:51', 19, '77', NULL, NULL),
-(1583, 25, '2014-03-19 12:37:35', 19, '89', NULL, NULL),
-(1582, 24, '2014-03-19 07:57:04', 19, '184', NULL, NULL),
-(1581, 24, '2014-03-19 10:57:02', 19, '100', NULL, NULL),
-(1580, 24, '2014-03-19 10:57:00', 19, '120', NULL, NULL),
-(1579, 24, '2014-03-19 10:56:56', 19, '180', NULL, NULL),
-(1578, 23, '2014-03-09 22:53:51', 19, '89', NULL, NULL),
-(1577, 23, '2014-03-09 18:53:51', 19, '153', NULL, NULL),
-(1576, 23, '2014-03-09 14:53:51', 19, '143', NULL, NULL),
-(1575, 23, '2014-03-09 11:53:51', 19, '88', NULL, NULL),
-(1574, 23, '2014-03-09 08:53:51', 19, '65', NULL, NULL),
-(1573, 22, '2014-03-08 22:53:51', 19, '79', NULL, NULL),
-(1572, 22, '2014-03-08 18:53:51', 19, '170', NULL, NULL),
-(1570, 22, '2014-03-08 12:53:51', 19, '120', NULL, NULL),
-(1569, 22, '2014-03-08 08:53:51', 19, '88', NULL, NULL),
-(1568, 21, '2014-03-18 09:14:08', 65, '50', NULL, NULL),
-(1567, 21, '2014-03-18 09:14:08', 64, '44', NULL, NULL),
-(1566, 21, '2014-03-18 09:14:08', 63, '390', NULL, NULL),
-(1571, 22, '2014-03-08 14:53:51', 19, '101', NULL, NULL),
-(1565, 21, '2014-03-17 09:13:56', 65, '51', NULL, NULL),
-(1564, 21, '2014-03-17 09:13:56', 64, '42', NULL, NULL),
-(1563, 21, '2014-03-17 09:13:56', 63, '420', NULL, NULL);
+(1, 34, '2014-04-02 08:18:36', 4, '', NULL, NULL),
+(2, 34, '2014-04-02 08:18:36', 3, '85', NULL, NULL),
+(3, 34, '2014-04-02 10:18:49', 4, 'breakfast', NULL, NULL),
+(4, 34, '2014-04-02 10:18:49', 3, '178', NULL, NULL),
+(5, 34, '2014-04-02 15:18:59', 4, 'Insulin s.c.', NULL, NULL),
+(6, 34, '2014-04-02 15:18:59', 3, '87', NULL, NULL),
+(7, 34, '2014-04-02 18:19:14', 4, '', NULL, NULL),
+(8, 34, '2014-04-02 18:19:14', 3, '112', NULL, NULL),
+(9, 34, '2014-04-02 21:19:20', 4, '', NULL, NULL),
+(10, 34, '2014-04-02 21:19:20', 3, '134', NULL, NULL),
+(11, 35, '2014-04-01 08:19:41', 4, '', NULL, NULL),
+(12, 35, '2014-04-01 08:19:41', 3, '77', NULL, NULL),
+(13, 35, '2014-04-01 10:19:50', 4, '', NULL, NULL),
+(14, 35, '2014-04-01 10:19:50', 3, '98', NULL, NULL),
+(15, 35, '2014-04-01 15:19:57', 4, '', NULL, NULL),
+(16, 35, '2014-04-01 15:19:57', 3, '187', NULL, NULL),
+(17, 35, '2014-04-01 18:20:05', 4, '', NULL, NULL),
+(18, 35, '2014-04-01 18:20:05', 3, '120', NULL, NULL),
+(19, 35, '2014-04-01 21:20:14', 4, '', NULL, NULL),
+(20, 35, '2014-04-01 21:20:14', 3, '78', NULL, NULL),
+(21, 36, '2014-04-02 08:20:33', 7, '', NULL, NULL),
+(22, 36, '2014-04-02 08:20:33', 5, 'Ham and eggs', NULL, NULL),
+(23, 36, '2014-04-02 08:20:33', 6, 'breakfast', NULL, NULL),
+(24, 36, '2014-04-02 12:20:54', 7, '', NULL, NULL),
+(25, 36, '2014-04-02 12:20:54', 5, 'Soup', NULL, NULL),
+(26, 36, '2014-04-02 12:20:54', 6, 'lunch', NULL, NULL),
+(27, 36, '2014-04-02 15:21:10', 7, 'got very sick', NULL, NULL),
+(28, 36, '2014-04-02 15:21:10', 5, 'banana', NULL, NULL),
+(29, 36, '2014-04-02 15:21:10', 6, 'snack', NULL, NULL),
+(30, 36, '2014-04-02 15:21:25', 7, 'very very sick', NULL, NULL),
+(31, 36, '2014-04-02 15:21:25', 5, '', NULL, NULL),
+(32, 36, '2014-04-02 15:21:25', 6, 'dinner', NULL, NULL),
+(33, 37, '2014-04-03 08:22:17', 4, '', NULL, NULL),
+(34, 37, '2014-04-03 08:22:17', 3, '78', NULL, NULL),
+(35, 37, '2014-04-03 10:22:20', 4, '', NULL, NULL),
+(36, 37, '2014-04-03 10:22:20', 3, '98', NULL, NULL),
+(37, 37, '2014-04-03 21:22:24', 4, '', NULL, NULL),
+(38, 37, '2014-04-03 21:22:24', 3, '117', NULL, NULL),
+(39, 37, '2014-04-03 15:22:26', 4, '', NULL, NULL),
+(40, 37, '2014-04-03 15:22:26', 3, '345', NULL, NULL);
+
+
+INSERT INTO `form_track_anything_type` (`track_anything_type_id`, `name`, `description`, `parent`, `active`) VALUES
+(1, 'Bloodglucose', 'Blood glucose', 0, 1),
+(2, 'Meal', 'what did patient eat', 0, 1),
+(3, 'Glucose', 'Glucose', 1, 1),
+(4, 'Comment', 'optional Comment', 1, 1),
+(5, 'Meal', 'what did patient eat', 2, 1),
+(6, 'Type', 'breakfast / lunch / dinner / supper / snack', 2, 1),
+(7, 'Comment', 'any comment', 2, 1);
 
 --
 -- Daten für Tabelle `patient_data`
